@@ -1,0 +1,59 @@
+\chapter{Experimentação e Validação}
+
+\section{Bases de Dados}
+\label{sec:bases_de_dados}
+
+\subsection{Bases de dados Sintéticas}
+
+% AQUI VOU TER QUE CITAR OS AUTORES DOS FLUXOS DE DADOS
+As seguintes bases de dados sintéticas foram utilizadas:
+\begin{itemize}
+    \item AssetNegotiationGenerator
+    \item SEAGenerator
+    \item RandomRBFGenerator
+    \item AgrawalGenerator
+    \item HyperplaneGenerator
+    \item STAGGERGenerator
+    \item RandomTreeGenerator
+    \item WaveformGenerator
+    \item LEDGenerator
+\end{itemize}
+
+\subsection{Bases de dados Reais}
+
+% AQUI VOU TER QUE CITAR OS AUTORES DOS FLUXOS DE DADOS
+A seguir, apresentamos as bases de dados reais empregadas:
+\begin{itemize}
+    \item AWS Spot Pricing Market
+\end{itemize}
+
+\section{Protocolo Experimental}
+
+Utilizando as bases de dados listadas na seção \ref{sec:bases_de_dados} subtemos aos seguintes experimentos.
+
+Inicialmente, conduzimos um experimento inserindo apenas os dados provenientes do fluxo de dados, com o objetivo de verificar se a inserção sequencial dos dados provoca o desbalanceamento da \textit{k}d-tree.
+
+Para avaliar o desbalanceamento da árvore, consideramos o número total de nós, representado por $n$, e sua altura, denotada por $h$. A partir da quantidade de nós, é possível determinar a altura balanceada teórica da árvore, conforme a Equação~\ref{eq:altura_balanceada}.
+
+\begin{equation}
+    h_{bal} = \lfloor \log_2 n \rfloor
+    \label{eq:altura_balanceada}
+\end{equation}
+
+Também comparamos essa altura com a de uma árvore rubro-negra, segundo a Equação~\ref{eq:altura_rubro_negra}.
+
+\begin{equation}
+    h_{rn} = 2 \cdot \log_2 (n + 1)
+    \label{eq:altura_rubro_negra}
+\end{equation}
+
+Nos experimentos realizados, esperamos que a árvore gerada a partir de um fluxo de dados qualquer apresente altura dentro do intervalo definido pela Equação~\ref{eq:altura_ideal}.
+
+\begin{equation}
+    h_{bal} \leq h \leq h_{rn}
+    \label{eq:altura_ideal}
+\end{equation}
+
+Dessa forma, é possível quantificar a qualidade estrutural das árvores geradas. Posteriormente, essa metodologia será aplicada a cenários envolvendo fluxos de dados contínuos com janelas deslizantes, onde a skd-tree será submetida.
+
+\section{Conclusão}

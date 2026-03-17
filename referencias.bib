@@ -1,0 +1,211 @@
+% Modelos de referências em BibTeX
+
+% ATENCAO:
+%
+% - para preservar as maiúsculas em siglas nos títulos, use {...}.
+    Veja um exemplo na referência "iskandar00" abaixo.
+
+%%%%% exemplo de livro
+@book{iskandar00,
+  author    = {J. Iskandar},
+  title     = {Normas da {ABNT} Comentadas para Trabalhos Científicos},
+  year      = {2000},
+  publisher = {Editora Champagnat (PUCPR)}
+}
+
+@book{goossens93,
+  author    = {M. Goossens and F. Mittelbach and A. Samarin},
+  title     = {The \LaTeX\ Companion},
+  year      = {1993},
+  publisher = {Addison-Wesley}
+}
+
+@book{oetiker07,
+  author    = {T. Oetiker and H. Partl and I. Hyna and E. Schlegl},
+  title     = {The Not So Short Introduction to \LaTeXe{}},
+  publisher = {\url{http://www.ctan.org/tex-archive/info/lshort}},
+  year      = {2007}
+}
+
+%%%%% exemplo de parte de livro
+@inbook{Birman89,
+  author    = {K. Birman and T. Joseph},
+  editor    = {S. Mullender},
+  pages     = {293-317},
+  publisher = {Addison-Wesley},
+  title     = {Reliable Broadcast Protocols in Distributed Systems},
+  year      = {1989}
+}
+
+%%%%% exemplo de manual
+@manual{Chorus96a,
+  title        = {Chorus/Cool-ORB r3 - Product Description},
+  organization = {Chorus Systems},
+  note         = {CS/TR-95-157.3},
+  month        = {June},
+  year         = {1996}
+}
+
+%%%%% exemplo de tese de doutorado
+@phdthesis{Maziero94,
+  author  = {C. Maziero},
+  title   = {Conception et réalisation d'un noyau de système
+             réparti pour la simulation parallèle},
+  school  = {IRISA - Université de Rennes I},
+  address = {Rennes - France},
+  note    = {137 pgs},
+  number  = {1161},
+  month   = {June},
+  year    = {1994}
+}
+
+%%%%% exemplo de dissertação de mestrado
+@mastersthesis{Ribeiro97,
+  author  = {R. Ribeiro},
+  title   = {Proposta de um suporte para simulações orientadas a
+             objetos distribuídas em uma plataforma aberta},
+  school  = {Pós-Graduação em Engenharia Elétrica - Universidade
+             Federal de Santa Catarina},
+  address = {Fpolis - SC},
+  note    = {},
+  number  = {},
+  month   = {Junho},
+  year    = {1997}
+}
+
+%%%%% exemplo de artigo em revista
+@article{Awerbuch85a,
+  author  = {B. Awerbuch},
+  title   = {Complexity of network synchronization},
+  journal = {Journal of ACM},
+  volume  = {32},
+  number  = {4},
+  pages   = {801-823},
+  note    = {invited paper},
+  month   = {October},
+  year    = {1985}
+}
+
+%%%%% exemplo de artigo em evento
+@conference{Adam88,
+  author    = {M. Adam and Ph. Ingels and M. Raynal},
+  title     = {The meaning of synchronous distributed algorithms run on
+               asynchronous distributed systems},
+  booktitle = {3$^{rd}$ International Symposium on Computer and
+               Information Sciences},
+  address   = {Izmir - Turkey},
+  pages     = {307-316},
+  month     = {November},
+  year      = {1988}
+}
+
+%%%%% exemplo de relatório técnico
+@techreport{bibufpr15,
+  author      = {Biblioteca UFPR},
+  institution = {Sistema de Bibliotecas -- Universidade Federal do Paran\'a},
+  title       = {Manual de normaliza\c{c}\~ao de documentos cient\'ificos de acordo com as normas da {ABNT}},
+  number      = {ISBN 9788584800025},
+  address     = {Curitiba PR},
+  year        = {2015}
+}
+
+%%%%% exemplo de URL (páginas Web)
+@misc{maziero15,
+  title        = {Modelo {PPGInf UFPR} para teses e dissertações},
+  author       = {Carlos Maziero},
+  howpublished = {\url{http://www.inf.ufpr.br/maziero}},
+  year         = {2015},
+  note         = {Acessado em 30/11/2015}
+}
+
+
+%%% Referências
+@article{bentleyMultidimensionalBinarySearch1975,
+  title    = {Multidimensional Binary Search Trees Used for Associative Searching},
+  author   = {Bentley, Jon Louis},
+  year     = 1975,
+  month    = sep,
+  journal  = {Communications of the ACM},
+  volume   = {18},
+  number   = {9},
+  pages    = {509--517},
+  issn     = {0001-0782, 1557-7317},
+  doi      = {10.1145/361002.361007},
+  urldate  = {2025-09-26},
+  abstract = {This paper develops the multidimensional binary search tree (or k-d tree, where k is the dimensionality of the search space) as a data structure for storage of information to be retrieved by associative searches. The k-d tree is defined and examples are given. It is shown to be quite efficient in its storage requirements. A significant advantage of this structure is that a single data structure can handle many types of queries very efficiently. Various utility algorithms are developed; their proven average running times in an n record file are : insertion, O(log n); deletion of the root, 0 (n (k--1)/k); deletion of a random node, O(log n); and optimization (guarantees logarithmic performance of searches), 0 (n log n). Search algorithms are given for partial match queries with t keys specified [proven maximum running time of O (n (k-t)/k) ] and for nearest neighbor queries [empirically observed average running time of O(log n). ] These performances far surpass the best currently known algorithms for these tasks. An algorithm is presented to handle any general intersection query. The main focus of this paper is theoretical. It is felt, however, that k-d trees could be quite useful in many applications, and examples of potential uses are given.},
+  langid   = {english},
+  keywords = {importante,lido,teste},
+  file     = {/home/pedro/Zotero/storage/CMCFJJR9/Bentley - 1975 - Multidimensional binary search trees used for associative searching.pdf}
+}
+
+@article{friedmanAlgorithmFindingBest1977,
+  title    = {An {{Algorithm}} for {{Finding Best Matches}} in {{Logarithmic Expected Time}}},
+  author   = {Friedman, Jerome H. and Bentley, Jon Louis and Finkel, Raphael Ari},
+  year     = 1977,
+  month    = sep,
+  journal  = {ACM Transactions on Mathematical Software},
+  volume   = {3},
+  number   = {3},
+  pages    = {209--226},
+  issn     = {0098-3500, 1557-7295},
+  doi      = {10.1145/355744.355745},
+  urldate  = {2025-09-30},
+  langid   = {english},
+  keywords = {importante,lido},
+  file     = {/home/pedro/Zotero/storage/UX6FUDCG/Friedman et al. - 1977 - An Algorithm for Finding Best Matches in Logarithmic Expected Time.pdf}
+}
+
+@article{koDynamicClassifierSelection2008,
+  title     = {From Dynamic Classifier Selection to Dynamic Ensemble Selection},
+  author    = {Ko, Albert H.R. and Sabourin, Robert and Britto, Jr., Alceu Souza},
+  year      = 2008,
+  month     = may,
+  journal   = {Pattern Recognition},
+  volume    = {41},
+  number    = {5},
+  pages     = {1718--1731},
+  issn      = {00313203},
+  doi       = {10.1016/j.patcog.2007.10.015},
+  urldate   = {2026-03-03},
+  abstract  = {In handwritten pattern recognition, the multiple classifier system has been shown to be useful for improving recognition rates. One of the most important tasks in optimizing a multiple classifier system is to select a group of adequate classifiers, known as an Ensemble of Classifiers (EoC), from a pool of classifiers. Static selection schemes select an EoC for all test patterns, and dynamic selection schemes select different classifiers for different test patterns. Nevertheless, it has been shown that traditional dynamic selection performs no better than static selection. We propose four new dynamic selection schemes which explore the properties of the oracle concept. Our results suggest that the proposed schemes, using the majority voting rule for combining classifiers, perform better than the static selection method.},
+  copyright = {https://www.elsevier.com/tdm/userlicense/1.0/},
+  langid    = {english},
+  file      = {/home/pedro/Zotero/storage/ZMQWHHT5/Ko et al. - 2008 - From dynamic classifier selection to dynamic ensemble selection.pdf}
+}
+
+@misc{limabarbozaIncaDesIncrementalAdaptive2024,
+  title         = {Inca-{{Des}}: {{An Incremental}} and {{Adaptive Dynamic Ensemble Selection Approach Using Online K-D Tree Neighborhood Search}} for {{Data Streams}} with {{Concept Drift}}},
+  shorttitle    = {Inca-{{Des}}},
+  author        = {Lima Barboza, Eduardo Victor and Lisboa De Almeida, Paulo Ricardo and Britto, Alceu and Sabourin, Robert and {Menelau-cruz}, Rafael},
+  year          = 2024,
+  publisher     = {SSRN},
+  doi           = {10.2139/ssrn.5062124},
+  urldate       = {2025-10-01},
+  abstract      = {Data streams pose challenges not usually encountered in batch-based Machine Learning (ML). One of them is concept drift, which is characterized by the change in data distribution over time. Among many approaches explored in literature, the fusion of classifiers has been showing good results and is getting growing attention. More specifically, Dynamic Selection (DS) methods, due to the ensemble being instance-based, seem to be a more efficient choice under drifting scenarios. However, some attention must be paid to adapting such methods for concept drift. The training must be done in order to create local experts, and the commonly used neighborhood-search DS may become prohibitive with the continuous arrival of data. In this work, we propose Incremental Adaptive Dynamic Ensemble Selection (IncA-DES), which employs a training strategy that promotes the generation of local experts with the assumption that different regions of the feature space become available with time. Additionally, the fusion of a concept drift detector supports the maintenance of information and adaptation to a new concept. An overlap-based classification filter is also employed in order to avoid using the DS method when there is a consensus in the neighborhood, a strategy that we argue every DS method should employ, as it was shown to make them more applicable and quicker. Moreover, aiming to reduce the processing time of the k-Nearest Neighbors (kNN), we propose an Online K-d tree algorithm, which can quickly remove instances without becoming inconsistent and deals with unbalancing concerns that may occur in data streams. Experimental results showed that the proposed framework got the best average accuracy compared to seven state-of-the-art methods considering different levels of label availability and presented the smaller processing time between the most accurate methods. Additionally, the fusion with the Online K-d tree has improved processing time with a negligible loss in accuracy. We have made our framework available in an online repository1.},
+  archiveprefix = {SSRN},
+  langid        = {english},
+  keywords      = {lido},
+  file          = {/home/pedro/Zotero/storage/G8KTN589/Lima Barboza et al. - 2024 - Inca-Des An Incremental and Adaptive Dynamic Ensemble Selection Approach Using Online K-D Tree Neig.pdf}
+}
+
+
+@misc{caiIkdTreeIncrementalKD2021,
+  title         = {Ikd-{{Tree}}: {{An Incremental K-D Tree}} for {{Robotic Applications}}},
+  shorttitle    = {Ikd-{{Tree}}},
+  author        = {Cai, Yixi and Xu, Wei and Zhang, Fu},
+  year          = 2021,
+  month         = feb,
+  number        = {arXiv:2102.10808},
+  eprint        = {2102.10808},
+  primaryclass  = {cs},
+  publisher     = {arXiv},
+  doi           = {10.48550/arXiv.2102.10808},
+  urldate       = {2025-09-30},
+  abstract      = {This paper proposes an efficient data structure, ikd-Tree, for dynamic space partition. The ikd-Tree incrementally updates a k-d tree with new coming points only, leading to much lower computation time than existing static k-d trees. Besides point-wise operations, the ikd-Tree supports several features such as box-wise operations and down-sampling that are practically useful in robotic applications. In parallel to the incremental operations (i.e., insert, re-insert, and delete), ikd-Tree actively monitors the tree structure and partially rebalances the tree, which enables efficient nearest point search in later stages. The ikd-Tree is carefully engineered and supports multi-thread parallel computing to maximize the overall efficiency. We validate the ikd-Tree in both theory and practical experiments. On theory level, a complete time complexity analysis is presented to prove the high efficiency. On experiment level, the ikd-Tree is tested on both randomized datasets and real-world LiDAR point data in LiDAR-inertial odometry and mapping application. In all tests, ikd-Tree consumes only 4\% of the running time in a static k-d tree.},
+  archiveprefix = {arXiv},
+  langid        = {english},
+  keywords      = {nao-lido},
+  file          = {/home/pedro/Zotero/storage/PAQU3PJK/Cai et al. - 2021 - ikd-Tree An Incremental K-D Tree for Robotic Applications.pdf}
+}
+
+
